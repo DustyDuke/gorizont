@@ -262,6 +262,7 @@ width: 250px;
 .price-list li{
 	min-width: 250px;
 	list-style: none;
+	cursor: pointer;
 }
 .price-list .square {
 	font-weight: bold;
