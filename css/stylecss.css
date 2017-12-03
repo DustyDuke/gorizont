@@ -905,7 +905,7 @@ left: 25%;
 }
 	.custom .modal {
 	max-width: 300px;
-	height: 200px;
+	height: 150px;
 }
 	.custom .modal-body img {
 	transform: scale(0.9);
@@ -914,7 +914,7 @@ left: 25%;
 text-align: center;
 	}
 	.sale iframe {
-		width: 220px;
+		width: 180px;
 	}
 }
 .contact-us iframe {
