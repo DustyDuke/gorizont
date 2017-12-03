@@ -907,13 +907,14 @@ left: 25%;
 	height: 250px;
 }
 	.custom .modal-body img {
-	transform: scale(0.7)	
+	transform: scale(0.8)	
 	}
 .contact-us {
 text-align: center;
 }
-.contact-us iframe {
+iframe {
 max-width: 250px;
-	text-align: center;
+display: inline;
+text-align: center;
 }
 	}
