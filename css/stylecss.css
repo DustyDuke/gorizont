@@ -906,11 +906,14 @@ left: 25%;
 	width: 300px;
 	height: 300px;
 }
+	.custom .modal img {
+	transform: scale(0.6)	
+	}
 .contact-us {
 text-align: center;
 }
-iframe {
+.contact-us iframe {
 max-width: 250px;
-margin: 0 auto;
+
 }
 	}
