@@ -903,13 +903,13 @@ margin-bottom: 30px;
 left: 25%;
 }
 	.custom .modal {
-		transform: scale(0.7);
+		transform: scale(0.5);
 	}
 .contact-us {
 text-align: center;
 }
 iframe {
-max-width: 400px;
+max-width: 340px;
 margin: 0 auto;
 }
 	}
