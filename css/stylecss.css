@@ -909,16 +909,12 @@ left: 25%;
 }
 	.custom .modal-body img {
 	transform: scale(0.9);
-		margin-top: 20px;
+		margin-top: 0;
 	}
 .contact-us {
 text-align: center;
 	}
-	.sale iframe {
-		width: 180px;
-	}
-}
-.contact-us iframe {
-width: 250px;
+	iframe {
+		max-width: 200px;
 	}
 	}
