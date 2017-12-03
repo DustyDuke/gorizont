@@ -904,10 +904,10 @@ left: 25%;
 }
 	.custom .modal {
 	width: 300px;
-	height: 300px;
+	height: 350px;
 }
 	.custom .modal-body img {
-	transform: scale(0.6)	
+	transform: scale(0.7)	
 	}
 .contact-us {
 text-align: center;
@@ -915,5 +915,6 @@ text-align: center;
 .contact-us iframe {
 max-width: 250px;
 display: inline;
+	text-align: center;
 }
 	}
