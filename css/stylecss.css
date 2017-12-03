@@ -903,7 +903,7 @@ margin-bottom: 30px;
 left: 25%;
 }
 	.custom .modal {
-		display: none;
+		transform: scale(0.7);
 	}
 .contact-us {
 text-align: center;
