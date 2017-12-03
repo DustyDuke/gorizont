@@ -896,6 +896,7 @@ padding: 10px;
 }
 .promo .paint {
 margin-bottom: 30px;
+margin-right: 0;
 }
 .description img {
   transform: scale(0.7);
@@ -905,7 +906,7 @@ left: 25%;
 }
 	.custom .modal {
 	max-width: 300px;
-	height: 150px;
+	height: 200px;
 }
 	.custom .modal-body img {
 	transform: scale(0.9);
