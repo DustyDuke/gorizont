@@ -196,9 +196,13 @@ main h1 {
 }
 .features {
 	background: #f4f4f4;
+	padding-bottom: 50px;
 }
 .feature-align {
 	width: 210px;
+}
+.feature-item p {
+max-height: 40px;
 }
 .features h4 {
 	text-align: center;
@@ -452,7 +456,7 @@ margin: 50px auto 70px auto;
 	color: #000;
 }
 .carousel-inner .item {
- margin-left: 100px;
+ margin-left: 20%;
 }
 .panorama {
 	background: #8fc2dd;
@@ -516,7 +520,7 @@ margin: 50px auto 70px auto;
     background-position: -346px -332px;
 }
 .squares::before {
-    background-position: -346px -332px;
+    background-position: -355px -178px;
 }
 .leading .saferty h1 {
 	text-transform: none;
@@ -838,21 +842,70 @@ margin: 50px auto 70px auto;
 @media only screen and (max-width : 480px) {
 
 .preview h1 {
-	margin-top: 70px;
+	margin-top: 90px;
+}
+.preview .logo {
+	transform: scale(0.4);
+	margin-top: -20px;
+margin-left: -50px;
+}
+.container .call h3,
+.preview h1 {
+font-size: 16px;
+}
+.preview p {
+font-size: 14px;
+}
+main h1 {
+font-size: 28px;
+}
+.preview .btn {
+ transform: scale(0.8);
+}
+.feature-align {
+	max-width: 100px;
+}
+feature-item p {
+padding-bottom: 50px;
+}
+.feature-item::before{
+left: 25%;
 }
 .custom .floor1::after {	
-    left: 25%;  
+    left: 23%;  
 }
 .custom .floor2::after {
-     left: 25%;  
+     left: 23%;  
 }
 .custom .floor11::after {
-    left: 25%;  
+    left: 23%;  
 }
 .custom .floor16::after {
-	 left: 25%;  
+	 left: 23%;  
 }
 .documents ul:last-child {
 	margin-top: -20px;
 }
+.promo .price-list {
+float: left;
 }
+.promo .description {
+padding: 10px;
+}
+.promo .paint {
+margin-bottom: 30px;
+}
+.description img {
+  transform: scale(0.7);
+}
+.leading-item::before {
+left: 25%;
+}
+.contact-us {
+text-align: center;
+}
+iframe {
+max-width: 400px;
+margin: 0 auto;
+}
+	}
