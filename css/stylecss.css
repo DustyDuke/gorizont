@@ -909,6 +909,7 @@ left: 25%;
 }
 	.custom .modal-body img {
 	transform: scale(0.9);
+		margin-top: 20px;
 	}
 .contact-us {
 text-align: center;
@@ -918,6 +919,6 @@ text-align: center;
 	}
 }
 .contact-us iframe {
-width: 270px;
+width: 250px;
 	}
 	}
