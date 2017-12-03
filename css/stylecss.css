@@ -902,6 +902,9 @@ margin-bottom: 30px;
 .leading-item::before {
 left: 25%;
 }
+	.custom .modal {
+		display: none;
+	}
 .contact-us {
 text-align: center;
 }
