@@ -867,7 +867,7 @@ font-size: 28px;
 .feature-align {
 	max-width: 100px;
 }
-feature-item p {
+.feature-item p {
 padding-bottom: 50px;
 }
 .feature-item::before{
