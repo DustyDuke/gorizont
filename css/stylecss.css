@@ -2,11 +2,11 @@ body {
 font-family: 'PT Sans', sans-serif;
 font-family: 'Rubik', sans-serif;
 }
-header {
+header,
+.custom .modal-header h3 {
 	padding: 0;
 	margin: 0;
 }
-
 .navbar {
 	background: #0d1e28;
 	min-height: 50px;
@@ -19,7 +19,6 @@ button .icon-bar {
 float: none;
 text-align: center;
 list-style: none;
-
 }
 .navbar .container {
 	padding: 0;
@@ -53,7 +52,6 @@ display: inline-block;
 .modal-header {
 	color: #000;
 	font-weight: bold;
-
 }
 .modal .feedback-form {
 	padding: 5px;
@@ -63,7 +61,6 @@ display: inline-block;
 	max-width: 350px;
     border-collapse: collapse;
 }
-
 .modal td {
     padding: 10px;
     border: none;
@@ -71,7 +68,6 @@ display: inline-block;
 .modal td:first-of-type {
 	width: 150px;
 }
-
 .navbar .btn,
 .preview .btn,
 .sale .btn,
@@ -104,8 +100,7 @@ display: inline-block;
 }
 .container .logo {
 	float: left;
-	margin-top: 25px;
-	
+	margin-top: 25px;	
 }
 .preview .call h3,
 .preview h1 {
@@ -121,7 +116,6 @@ display: inline-block;
 	font-size: 29px;
 }
 .preview h1 {
-	text-transform: uppercase;
 	text-align: center;
 	margin-top: 170px;
 	font-size: 60px;
@@ -130,24 +124,33 @@ display: inline-block;
 	font-size: 34px;
 	text-align: center;
 }
-.round {
+.round,
+.round .sticker,
+.round .shadow,
+.price .num,
+.round .credit,
+.num::before,
+.round .price,
+.round .attension {
 	position: relative;	
-	transform: scale(0.8);
+}
+.round {
 	bottom: 40px;
-	
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	transform: scale(0.8);
 }
 .round .sticker {
-	position: relative;
 	bottom: 90px;
 	z-index: 1;
 }
 .round .shadow {
-	position: relative;
 	bottom: 70px;
 	right: 300px;
 }
 .price .num {
-	position: relative;
 	top: 20px;
 	right: 10px;
 	font-size: 100px;
@@ -155,42 +158,50 @@ display: inline-block;
 	color: #f8db1d;
 	z-index: 2;	
 }
+
 .num::before {
 	content: "от";
 	font-size: 24px;
-	position: relative;
 	bottom: 53px;
 	left: 15px;
-	text-transform: uppercase;
+	
 }
 .round .price {
-	position: relative;
 	left: 70px;
 	font-size: 18px;
-	text-transform: uppercase;
 	width: 150px;
 	max-height: 100px;
 	z-index: 2;
 }
 .round .attension {
-	position: relative;
 	top: -10px;
 	font-size: 29px;
 	color: #f8db1d;
 	font-weight: bold;
-	text-transform: uppercase;
 	padding-top: 0;
 }
 .round .credit {
-	position: relative;
 	top: -15px;
 }
 main h1 {
 	color: #142936;
 	text-align: center;
-	text-transform: uppercase;
 	font-weight: bold;
 	margin-top: 70px;
+}
+main h1,
+.preview h1,
+.num::before,
+.round .price,
+.round .attension
+.features h4,
+.promo .select,
+.carousel h4,
+.saferty .up,
+.abilities h2,
+.document h4,
+.get h4  {
+	text-transform: uppercase;
 }
 .features {
 	background: #f4f4f4;
@@ -205,7 +216,6 @@ max-height: 40px;
 }
 .features h4 {
 	text-align: center;
-	text-transform: uppercase;
 }
 .feature-title {
 	margin-top: 150px;
@@ -253,7 +263,6 @@ max-height: 40px;
 	font-size: 18px;
 	border-color: #59a3e7;
 	text-align: center;
-	text-transform: uppercase;
 }
 .price-list  {
 width: 250px;
@@ -305,7 +314,8 @@ width: 250px;
 	width: 210px;
 	text-align: left;
 }
-.sale .btn {
+.sale .btn,
+.finishing .row {
 	text-align: center;
 }
 .sale h5 {
@@ -335,7 +345,7 @@ width: 250px;
 	margin: 10px 0 0 0;
 }
 .about p {
-	margin-bottom: 1px;
+	margin-bottom: 10px;
 }
 .about .map {
 	margin-top: 10px;
@@ -353,9 +363,6 @@ width: 250px;
 }
 .finishing p {
 	font-size: 16px;
-}
-.finishing .row {
-	text-align: center;
 }
 .custom,
 .order {
@@ -392,7 +399,6 @@ cursor: pointer;
 .custom h4:hover {
 	color: #59a3e7;	
 }
-
 .custom h4:hover::after {
 	background: rgba(89, 163, 231, 1);
 	background-image: 	
@@ -413,11 +419,11 @@ cursor: pointer;
 .custom .modal-header {
 	height: 50px;
 }
-.custom .modal-header h3 {
-	margin: 0;
-	padding: 0;
-}
 .custom .modal-body img {
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+	-o-transform: scale(2);
 	transform: scale(2);
 	margin-top: 80px;
 	margin-left: 15px;
@@ -429,9 +435,6 @@ cursor: pointer;
 max-width: 400px;
 max-height: 200px;
 margin: 50px auto 70px auto;
-}
-.carousel h4 {
-	text-transform: uppercase;
 }
 .carousel-control {
 	background: none !important;
@@ -460,7 +463,6 @@ margin: 50px auto 70px auto;
 .leading p {
 	text-align: center;
 	max-height: 34px;
-	
 }
 .leading-item::before {
     content: "";
@@ -472,15 +474,12 @@ margin: 50px auto 70px auto;
     background-image: url("../img/sprites.png");
     background-repeat: no-repeat;
 }
-
 .time::before {
     background-position: -200px -330px;
 }
-
 .logistic::before {
     background-position: -500px -319px;
 }
-
 .building::before {
     background-position: -343px -33px;
 }
@@ -490,11 +489,9 @@ margin: 50px auto 70px auto;
 .parking::before {
     background-position: -48px -334px;
 }
-
 .hitting::before {
     background-position: -230px -178px;
 }
-
 .good::before {
     background-position: -346px -332px;
 }
@@ -504,9 +501,6 @@ margin: 50px auto 70px auto;
 .leading .saferty h1 {
 	text-transform: none;
 	margin-bottom: 75px;
-}
-.saferty .up  {
-	text-transform: uppercase;
 }
 .saferty img {
 	margin: 0 20px;
@@ -533,7 +527,6 @@ margin: 50px auto 70px auto;
 	margin-bottom: 70px;
 }
 .get h4 {
-	text-transform: uppercase;
 	padding-left: 60px;
 	line-height: 1.3;
 	margin-bottom: 35px;
@@ -572,10 +565,6 @@ margin: 50px auto 70px auto;
 .city {
 	background: #162e3c;
 	color: #fff;
-}
-
-.abilities h2 {
-	text-transform: uppercase;
 }
 .abilities p {
 	font-size: 16px;
@@ -621,7 +610,6 @@ margin: 50px auto 70px auto;
 }
 .document h4 {
 	font-size: 20px;
-	text-transform: uppercase;
 	margin-left: 15px;
 }
 .documents ul {
@@ -659,6 +647,10 @@ margin: 50px auto 70px auto;
 	max-width: 700px;
 }
 .preview .logo {
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-o-transform: scale(2);
 	transform: scale(0.8);
 }
 .preview .call h3 {
@@ -667,6 +659,10 @@ margin: 50px auto 70px auto;
 .round {
 	bottom: 90px;
 	left: -70px;
+	-moz-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	-webkit-transform: scale(0.6);
+	-o-transform: scale(0.6);
 	transform: scale(0.6);		
 }
 .promo .sale {
@@ -700,6 +696,10 @@ left: 10px;
 .round {
 	bottom: 250px;
 	left: -100px;
+	-moz-transform: scale(0.4);
+	-ms-transform: scale(0.4);
+	-webkit-transform: scale(0.4);
+	-o-transform: scale(0.4);
 	transform: scale(0.4);		
 }
 .round .sticker {
