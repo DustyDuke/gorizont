@@ -185,8 +185,6 @@ display: inline-block;
 	position: relative;
 	top: -15px;
 }
-
-
 main h1 {
 	color: #142936;
 	text-align: center;
@@ -270,7 +268,6 @@ width: 250px;
 	text-align: left;
 	padding: 10px 10px 10px 10px;
 }
-
 .price-list .cost {
 	font-weight: normal;
 	margin-left: 70px;
@@ -288,11 +285,12 @@ width: 250px;
 .price-list .selected > .decor {
 	border-bottom: none;
 }
-
 .promo {
 	margin-bottom: 85px;
 }
-
+.about iframe {
+	margin-top: 20px;
+}
 .promo .description {
 	border: 1px solid #f4f4f4;
 	padding: 30px;
@@ -343,7 +341,8 @@ width: 250px;
 	margin-top: 10px;
 }
 .finishing h1,
-.custom h1 {
+.custom h1,
+.leading .container {
 		margin-bottom: 75px;
 }
 .finishing {
@@ -358,18 +357,19 @@ width: 250px;
 .finishing .row {
 	text-align: center;
 }
-.custom {
+.custom,
+.order {
 	margin-bottom: 80px;
-}
+} 
 .custom h4 {
 font-weight: bold;
 margin-bottom: 170px;
 cursor: pointer;
 }
-.modal {
-	max-width: 90%;
-}
-.custom .floor1::after {
+.custom .floor1::after,
+.custom .floor2::after,
+.custom .floor11::after,
+.custom .floor16::after  {
 	 content: "";
     position: absolute;
 	top: 50px;
@@ -381,37 +381,13 @@ cursor: pointer;
 	cursor: pointer;
 }
 .custom .floor2::after {
-	 content: "";
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 220px;
-    height: 160px;
     background-image: url("../img/plan2.png");
-    background-repeat: no-repeat;
-	cursor: pointer;
 }
 .custom .floor11::after {
-	 content: "";
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 220px;
-    height: 160px;
     background-image: url("../img/plan3.png");
-    background-repeat: no-repeat;
-	cursor: pointer;
 }
 .custom .floor16::after {
-	 content: "";
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 220px;
-    height: 160px;
     background-image: url("../img/plan4.png");
-    background-repeat: no-repeat;
-	cursor: pointer;
 }
 .custom h4:hover {
 	color: #59a3e7;	
@@ -462,7 +438,7 @@ margin: 50px auto 70px auto;
 	color: #000;
 }
 .carousel-inner .item {
- margin-left: 25%;
+ margin-left: calc(50% - 95px);
 }
 .panorama {
 	background: #8fc2dd;
@@ -473,9 +449,6 @@ margin: 50px auto 70px auto;
 	margin-bottom: 80px;
 	max-width: 100%;
 	height: auto;
-}
-.leading .container {
-	margin-bottom: 75px;
 }
 .leading h1 {
 	margin-top:  70px;
@@ -541,8 +514,9 @@ margin: 50px auto 70px auto;
 .saferty .row {
 	text-align: center;
 }
-.saferty p {
-	
+.saferty p,
+.abilities,
+.order h1 {
 	margin-bottom: 70px;
 }
 .buy {
@@ -599,9 +573,7 @@ margin: 50px auto 70px auto;
 	background: #162e3c;
 	color: #fff;
 }
-.abilities {
-	margin-bottom: 70px;
-}
+
 .abilities h2 {
 	text-transform: uppercase;
 }
@@ -617,12 +589,9 @@ margin: 50px auto 70px auto;
 	margin: 0;
 	padding: 0;
 }
-.order h1 {
-	margin-bottom: 70px;
-}
-
 .order .manager {
 	text-align: center;
+	margin-bottom: 20px;
 }
  .manager h5 {
 	font-weight: bold;
@@ -642,23 +611,23 @@ margin: 50px auto 70px auto;
 	font-weight: bold;
 	margin-bottom: 35px;
 }
-.order {
-	margin-bottom: 80px;
-}
 .contact-us .btn {
 	float: left
 }
 .document {
 	background: #162e3c;
 	color: #fff;
+	padding-bottom: 40px;
 }
 .document h4 {
 	font-size: 20px;
 	text-transform: uppercase;
+	margin-left: 15px;
 }
 .documents ul {
 	list-style: none;
 	float: left;
+	padding: 0;
 }
 .documents li {
 	margin: 15px;
@@ -672,8 +641,9 @@ margin: 50px auto 70px auto;
 	background: #fff;
 	color: #000;
 }
-
-
+.documents ul:last-child {
+	margin-left: 25px;
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
@@ -702,17 +672,11 @@ margin: 50px auto 70px auto;
 .promo .sale {
 	margin: 0 auto;
 }	
-.custom .floor1::after {	
-    left: 10px;  
-}
-.custom .floor2::after {
-     left: 10px;  
-}
-.custom .floor11::after {
-    left: 10px;  
-}
+.custom .floor1::after,
+.custom .floor2::after,
+.custom .floor11::after,
 .custom .floor16::after {
-	 left: 10px;  
+left: 10px;
 }
 }
 
@@ -744,12 +708,10 @@ margin: 50px auto 70px auto;
 .round .shadow {
 	bottom: 170px;
 }
-.feature-item {
+.feature-item,
+.contact-us .btn {
 	margin-bottom: 35px;	
 }
-
-
-
 .promo .btn {
 	margin: 15px;
 	max-width: 300px;
@@ -764,24 +726,19 @@ margin: 50px auto 70px auto;
 	text-align: center;
 	margin-top: 20px;
 }
-.custom .floor1::after {	
-    left: 80px;  
+.custom .floor1::after,
+.custom .floor2::after,
+.custom .floor11::after,
+.custom .floor16::after  {	
+    left: calc(50% - 110px);  
 }
-.custom .floor2::after {
-     left: 80px;  
+iframe {
+	width: 100%;
+	height: 200px;
 }
-.custom .floor11::after {
-    left: 80px;  
+	
 }
-.custom .floor16::after {
-	 left: 80px;  
-}
-.contact-us p:first-child {
-	margin-top: 35px;	
-}
-.contact-us .btn {
-	margin-top: 35px;	
-}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 	.navbar .nav-link {
@@ -809,12 +766,11 @@ margin: 50px auto 70px auto;
 .preview .call h3 {
 	font-size: 22px;
 }
-
 .promo .btn {
 	margin: 10px auto !important;
-	min-width: 100%;
 }
-.promo .plan {
+.promo .plan,
+.contact-us {
 	text-align: center;
 }
 .promo .sale {
@@ -826,19 +782,13 @@ margin: 50px auto 70px auto;
 .description .sale {
 	margin: 0 auto;
 }
-.custom .floor1::after {	
-    left: 35%;  
+.description .paint,
+.sale  {
+	width: 80%;
 }
-.custom .floor2::after {
-     left: 35%;  
+.documents ul:last-child {
+	margin-left: 0;
 }
-.custom .floor11::after {
-    left: 35%;  
-}
-.custom .floor16::after {
-	 left: 35%;  
-}
-
 }
 
 /* Extra Small Devices, Phones */
@@ -863,29 +813,11 @@ font-size: 14px;
 main h1 {
 font-size: 28px;
 }
-.preview .btn {
- transform: scale(0.8);
-}
 .feature-align {
 	max-width: 100px;
 }
 .feature-item p {
 padding-bottom: 50px;
-}
-.feature-item::before{
-left: 25%;
-}
-.custom .floor1::after {	
-    left: 23%;  
-}
-.custom .floor2::after {
-     left: 23%;  
-}
-.custom .floor11::after {
-    left: 23%;  
-}
-.custom .floor16::after {
-	 left: 23%;  
 }
 .documents ul:last-child {
 	margin-top: -20px;
@@ -903,7 +835,9 @@ margin-right: 0;
 .description img {
   transform: scale(0.7);
 }
-
+.description .paint {
+	width: 100%;
+}
 	.custom .modal {
 	max-width: 300px;
 	height: 300px;
@@ -912,13 +846,10 @@ margin-right: 0;
 	transform: scale(0.9);
 		margin-top: 0;
 	}
-	.carousel-inner .item {
- margin-left: 22%;
+.documents ul {
+	margin-bottom: 0;
 }
-.contact-us {
-text-align: center;
-	}
-	iframe {
-		max-width: 200px;
-	}
+.modal {
+	max-width: 90%;
+}
 	}
