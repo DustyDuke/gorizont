@@ -835,6 +835,10 @@ padding-bottom: 50px;
 .promo .price-list {
 text-align: center;
 }
+	.promo .btn {
+max-width: 250px;
+font-size: 14px;
+}
 .promo .description {
 padding: 0;
 }
