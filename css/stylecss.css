@@ -760,6 +760,7 @@ iframe {
 }
   .preview .container .call h3 {
 	  margin-bottom: 10px;
+	  text-align: right;
   }
 .preview p {
 	font-size: 16px;
