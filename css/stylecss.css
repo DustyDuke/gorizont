@@ -766,9 +766,14 @@ iframe {
 .preview .call h3 {
 	font-size: 22px;
 }
-.promo .btn {
-	margin: 10px auto !important;
+.pull-right,
+.pull-left {
+	float: none !important;
 }
+.promo ul {
+	padding: 0;
+}
+.toggles,
 .promo .plan,
 .contact-us {
 	text-align: center;
@@ -823,7 +828,7 @@ padding-bottom: 50px;
 	margin-top: -20px;
 }
 .promo .price-list {
-float: left;
+text-align: center;
 }
 .promo .description {
 padding: 0;
